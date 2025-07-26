@@ -1,0 +1,81 @@
+
+.navbarBox{
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-end;
+    margin-right: 30px;
+    
+}
+.itemTitle{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: rgb(82, 82, 80);
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   
+
+}
+.list{
+    margin: 10px;
+    list-style-type: none;
+    padding: 10px;
+    
+    overflow: hidden;
+    
+    position: relative;
+    z-index: 1;
+    
+    
+    
+}
+.list::after{
+    content: "";
+    position: absolute;
+  background-color: rgb(250, 250, 244);
+  height: 1%;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  transition: all 200ms ease-in-out 200ms;
+  z-index: -1;
+
+
+}
+.list:hover::after {
+    height: 100%;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+
+}
+.navbar{
+    width: 100%;
+   background-color: rgb(255, 255, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.searchBar{
+padding: 10px;
+width: 400px;
+margin-left: 20px;
+border-radius: 10px;
+border: 1px solid black;
+transition: all 200ms ease-in 20ms;
+font-size: 16px;
+color: black;
+
+}
+.searchBar:hover{
+    background-color: rgb(236, 236, 153);
+    cursor:pointer;
+}
+.searchBar::placeholder{
+    color: black;
+    font-weight: bolder;
+}
+
+
+
+
