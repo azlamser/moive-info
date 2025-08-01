@@ -77,5 +77,19 @@ color: black;
 }
 
 
-
+@media (max-width:450px) {
+    .body{
+        width: 100%;
+    }
+    .navbar{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .navbarBox{
+        width: 100%;
+    }
+    .searchBar{
+        width: 300px;
+    }
+}
 

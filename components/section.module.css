@@ -67,3 +67,51 @@ height: 80px;
     
     
 }
+
+
+@media (max-width:450px) {
+    .section1{
+        flex-direction: column;
+  
+        
+    }
+    .title{
+        font-size: 25px;
+        margin-bottom: 16px;
+    }
+    .foodName{
+        font-size: 30px;
+
+    }
+    .changeText{
+        height: 30px;
+
+    }
+
+@keyframes changetext {
+    0%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    25%{
+        transform: translateY(-40px);
+        opacity: 1;
+
+    }
+    50%{
+        transform: translateY(-80px);
+        opacity: 1;
+    }
+    75%{
+        transform: translateY(-120px);
+         opacity: 1;
+    }
+    100%{
+        transform: translateY(0);
+    }
+    
+}
+
+
+
+}
